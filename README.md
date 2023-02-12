@@ -3,7 +3,6 @@ Pour faire fonctionnée le D-Mecano vous devez ensure les fichier dans votre ser
 
 ensure D-Mecano
 
-
 ensure smj_asistenciacar
 
 
