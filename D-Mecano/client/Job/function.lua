@@ -34,7 +34,29 @@ end)
 RegisterNetEvent('esx:setJob2')
 AddEventHandler('esx:setJob2', function(job2)
     ESX.PlayerData.job2 = job2
-end)  
+end)
+
+
+
+Citizen.CreateThread(function()
+    if Bennys.jeveuxblips then
+    local Bennysmap = AddBlipForCoord(Bennys.pos.blips.position.x, Bennys.pos.blips.position.y, Bennys.pos.blips.position.z)
+    SetBlipSprite(Bennysmap, 121)
+    SetBlipColour(Bennysmap, 61)
+    SetBlipScale(Bennysmap, 0.65)
+    SetBlipAsShortRange(unicornmap, true)
+    BeginTextCommandSetBlipName('STRING')
+    AddTextComponentString("Bennys")
+    EndTextCommandSetBlipName(unicornmap)
+    end
+end)
+
+
+
+
+
+
+
 
 ObjectInFront = function(ped, pos)
     local entityWorld = GetOffsetFromEntityInWorldCoords(ped, 0.0, 1.5, 0.0)
