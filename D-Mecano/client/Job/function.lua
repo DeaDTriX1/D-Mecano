@@ -44,10 +44,10 @@ Citizen.CreateThread(function()
     SetBlipSprite(Bennysmap, 121)
     SetBlipColour(Bennysmap, 61)
     SetBlipScale(Bennysmap, 0.65)
-    SetBlipAsShortRange(unicornmap, true)
+    SetBlipAsShortRange(Bennysmap, true)
     BeginTextCommandSetBlipName('STRING')
     AddTextComponentString("Bennys")
-    EndTextCommandSetBlipName(unicornmap)
+    EndTextCommandSetBlipName(Bennysmap)
     end
 end)
 
